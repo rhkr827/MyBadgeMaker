@@ -1,5 +1,5 @@
 # MyBadgeMaker
-`Reladed skill badges created by shields.io`
+`Related skill badges created by shields.io`
 
 ### Purpose
 ```text
