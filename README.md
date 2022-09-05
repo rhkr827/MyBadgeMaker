@@ -3,8 +3,9 @@
 
 ### Purpose
 ```text
-  Due to too long url which custom created shields.io badge using base64 image, not support logo in https://simpleicons.org(maybe due to license)
-  Using shorten url via this repository url if need to insert skills badge
+  - Due to too long url which custom created shields.io badge using base64 image, 
+    not support logo in https://simpleicons.org(maybe due to license)
+  - For using shorten url via this repository url if need to insert skills badge
 ```
 
 ### 1. Download Badge(Done)
