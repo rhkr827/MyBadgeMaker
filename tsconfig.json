@@ -1,0 +1,18 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"strict": true,
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"target": "ES6",
+		"outDir": "./dist",
+		"esModuleInterop": true,
+		"sourceMap": true,
+		"diagnostics": true,
+		"paths": {
+			"@/*": ["src/*"]
+		}
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules", "**/*.spec.ts", "**/*.spec.js"]
+}

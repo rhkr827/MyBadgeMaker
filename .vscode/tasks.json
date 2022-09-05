@@ -1,0 +1,19 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "start",
+			"problemMatcher": [],
+			"label": "npm_start",
+			"detail": "npm run build && node dist/index.js"
+		},
+		{
+			"type": "npm",
+			"script": "start:only",
+			"problemMatcher": [],
+			"label": "npm_start_only",
+			"detail": "npm run build && node dist/index.js"
+		}
+	]
+}
