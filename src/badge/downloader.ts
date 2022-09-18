@@ -1,20 +1,21 @@
-import fs from 'fs'
-import fetch from 'node-fetch'
+import fs from 'fs';
+import fetch from 'node-fetch';
 
-import {logger as log} from '../utils/logger'
+import { logger as log } from '../utils/logger';
 
-const destPath: string = 'badge/'
+const destPath: string = 'badge/';
 class SvgDownloader {
-	static async run(name: string, url: string) {
-		const response = await fetch(url)
-		if (!response.ok) {
-			log.error(`${name} ${response.statusText}`)
-			throw new Error(`unexpected response ${response.statusText}`)
-		}
+  static async run(name: string, url: string) {
+    const response = await fetch(url);
+    var filename = name.toLowerCase().replace(/\s/g, '');
+    if (!response.ok) {
+      log.error(`${filename} ${response.statusText}`);
+      throw new Error(`unexpected response ${response.statusText}`);
+    }
 
-		const svg = await response.text()
-		fs.writeFileSync(`${destPath}/${name}.svg`, svg)
-	}
+    const svg = await response.text();
+    fs.writeFileSync(`${destPath}/${filename}.svg`, svg);
+  }
 }
 
-export {SvgDownloader}
+export { SvgDownloader };
